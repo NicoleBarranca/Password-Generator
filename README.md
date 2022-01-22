@@ -10,7 +10,6 @@ With online accounts it is a safe practice to use a different password for each 
 
 ## Website
 
-<img src=".assets/images/pgnb.png">
 
 ## Contribution
 Made by Nicole Barranca
