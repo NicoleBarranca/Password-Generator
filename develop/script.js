@@ -1,3 +1,4 @@
+// When the generate password is clicked, the first prompt will apear.
 var generateBtn = document.querySelector("#generate");
 
 //lowercase, uppercase, numeric and special character arreys.
@@ -15,25 +16,26 @@ function writePassword() {
 
 }
 
+// This function will help the user specify what type of characters they want in their password.
 function generatePassword() {
   var passwordCharacters = [];
   var length = parseInt(window.prompt("How many characters would you like your password to contain?"));
 
   var specialCharacters = confirm("Click OK to confirm adding special characters.");
-  //var specialArrey = specialCase[Math.floor(Math.random() * specialCharacters.length)];
+  
 
   var lowerCharacters = confirm("Click OK to confirm adding lowercase characters.");
-  //var lowerArrey = lowerCase[Math.floor(Math.random() * lowerCase.length)];
+
 
   var upperCharacters = confirm("Click OK to confirm adding uppercase characters.");
-  // var upperArrey = upperCase[Math.floor(Math.random() * upperCase.length)];
+
 
   var numericCharacters = confirm("Click OK to confirm adding numbers.");
-  //var upperArrey = upperCase[Math.floor(Math.random() * numeric.length)];
 
-  // var newPassword = lowerArrey + upperArrey + numbericArrey + specialArrey;
+
+ 
   if (specialCharacters) {
-    //alert();
+ 
     passwordCharacters = passwordCharacters.concat(specialCharacters);
   }
   if (lowerCharacters) {
@@ -48,17 +50,13 @@ function generatePassword() {
     passwordCharacters = passwordCharacters.concat(numeric);
   }
 
-  //console.log(lowerArrey + upperCase) 
-  //console.log(password)
+// The below variable will combine a random selection of characters based off of the user's specific password needs.
   var passwordString = "";
   for (let i = 0; i < length; i++) {
     var randomIndex = Math.floor(Math.random() * passwordCharacters.length);
     passwordString = passwordString + passwordCharacters[randomIndex];
   }
   return passwordString;
-  // write a loop
-  // return passwordCharacters[10]; //might have to do this multiple times
-  //return newPassword
 
 }
 
