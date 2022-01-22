@@ -9,7 +9,8 @@ With online accounts it is a safe practice to use a different password for each 
 * JavaScript
 
 ## Website
-https://nicolebarranca.github.io/NicoleBarranca/
+
+<img src=".assets/images/pgnb.png">
 
 ## Contribution
 Made by Nicole Barranca
