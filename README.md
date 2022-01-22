@@ -8,8 +8,7 @@ With online accounts it is a safe practice to use a different password for each 
 * CSS
 * JavaScript
 
-## Website
-
-
 ## Contribution
 Made by Nicole Barranca
+
+<img src="./assets/images/pgnb.png">
